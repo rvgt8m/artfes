@@ -1,0 +1,4 @@
+INSERT INTO `contents_artwork` 
+    (`id`, `supporter_id`, `prent_content_id`, `sort_id`, `category_main_detail_id`, `category_sub_detail_id`, `is_disable`, `title`, `catchecopy`, `content`, `url`, `is_contact`, `image_name`, `start_date_time`, `end_date_time`, `background_color`, `background_image_id`, `updatetime`, `createtime`) 
+    VALUES 
+    (``, `:supporter_id`, `:prent_content_id`, `:sort_id`, `:category_main_detail_id`, `:category_sub_detail_id`, `:is_disable`, `:title`, `:catchecopy`, `:content`, `:url`, `:is_contact`, `:image_name`, `:start_date_time`, `:end_date_time`, `:background_color`, `:background_image_id`, `:updatetime`, `:createtime`)

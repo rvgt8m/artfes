@@ -1,0 +1,30 @@
+/*{
+    "name": "My Server",
+    "host": "sv361.xserver.jp",
+    "protocol": "sftp",
+    "port": 22,
+    "username": "ftpuser08@game-strategy.info",
+    "remotePath": "/",
+    "uploadOnSave": true,
+    "useTempFile": false,
+    "openSsh": false
+}
+*/
+{
+    "host": "sv361.xserver.jp",  // サーバーのホスト名(サーバー情報から確認)
+    "protocol": "sftp", // 接続形式
+    "port": 10022,  // ポート番号(10022はエックスサーバーの指定番号。一般的に22)
+    "username": "tes-sev", // サーバーID(ログインID)
+    "remotePath": "/home/(サーバーID)/art-festival.net/public_html/", // ファイルをアップするリモートサーバーのディレクトリ(絶対パス)
+    "privateKeyPath": "/Users/Owner/.ssh/tes-sev.key", // サーバーパネル(管理画面)から発行された秘密鍵のPCローカル側での保存場所を指定(絶対パス)
+    "passphrase": "Fjau785jl", // サーバーパネル(管理画面)設定で指定した適当なパスフレーズ
+    "password": "xx9pfook", // サーバーパネルのログインパスワード
+    "uploadOnSave": false, // VS Codeでファイル保存した際に、リモートサーバーと同期するか、しないか(しないに設定)
+    "downloadOnOpen": false, // VS Code起動時にリモートサーバーからファイルダウンロードするか、しないか(しないに設定)
+    "ignore": [ // 以下のディレクトリおよび配下ファイルをアップロード・同期から除外
+      "**/.vscode/**",
+      "**/.history/**",
+      "**/.git/**",
+      "**/.DS_Store"
+    ]
+  }
